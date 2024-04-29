@@ -1,3 +1,9 @@
+<?php
+    $paragraph = $_POST["paragraph"];
+    $parlen = strlen($paragraph);
+    $word = $_POST["word"];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +19,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- css -->
     <script src="css/style.css"></script>
-    <title>Title</title>
+    <title>PHP Badwords</title>
 </head>
 <body>
-
+    <div class="container">
+        <h3>Lunghezza Paragrafo: <?php echo $parlen ?></h3>
+        <h4>Contenuto Paragrafo:</h4>
+        <h6><?php echo $paragraph ?></h6>
+    </div>
 </body>
 </html>
