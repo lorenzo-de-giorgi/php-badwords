@@ -1,7 +1,12 @@
 <?php
+    // contenuto paragrafo
     $paragraph = $_POST["paragraph"];
+    // lunghezza del paragrafo
     $parlen = strlen($paragraph);
+    // contenuto parola
     $word = $_POST["word"];
+    //sostituisco la word con gli *
+    $badwords = str_replace($word, '***', $paragraph)
 
 ?>
 <!DOCTYPE html>
@@ -26,6 +31,7 @@
         <h3>Lunghezza Paragrafo: <?php echo $parlen ?></h3>
         <h4>Contenuto Paragrafo:</h4>
         <h6><?php echo $paragraph ?></h6>
+        <h4><?php echo $badwords ?></h4>
     </div>
 </body>
 </html>
