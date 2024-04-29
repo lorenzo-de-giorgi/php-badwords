@@ -16,6 +16,18 @@
     <title>Title</title>
 </head>
 <body>
-
+    <div class="container">
+        <form action="badwords.php" method="POST">
+            <div class="mb-3">
+                <label class="form-label">Inserisci paragrafo</label>
+                <input type="text" name="paragraph" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Parola da censurare</label>
+                <input type="text" name="word" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Invia</button>
+        </form>
+    </div>
 </body>
 </html>
